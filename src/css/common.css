@@ -36,6 +36,29 @@ img {
   border-radius: 5px;
   cursor: pointer;
 }
+[data-start]:hover,
+[data-start]:focus {
+  color: white;
+  background-color: #1d066e;
+}
+
+[data-stop] {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4941e3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+[data-stop]:hover,
+[data-stop]:focus {
+  color: white;
+  background-color: #1d066e;
+}
 
 .timer {
   display: flex;
