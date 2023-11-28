@@ -37,7 +37,8 @@ img {
   cursor: pointer;
 }
 [data-start]:hover,
-[data-start]:focus {
+[data-start]:focus,
+[data-start]:disabled {
   color: white;
   background-color: #1d066e;
 }
@@ -55,7 +56,8 @@ img {
 }
 
 [data-stop]:hover,
-[data-stop]:focus {
+[data-stop]:focus,
+[data-stop]:disabled {
   color: white;
   background-color: #1d066e;
 }

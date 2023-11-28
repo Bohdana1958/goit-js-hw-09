@@ -14,9 +14,9 @@ function handleClickCreate(event) {
   let inputStep = Number(step.value);
   let inputAmount = Number(amount.value);
 
-  for (let i = 1; i < inputAmount; i += 1) {
-    let delays = inputDelay + i * inputStep;
-    createPromise(i, delays)
+  for (let i = 1; i <= inputAmount; i += 1) {
+    let delays = inputDelay + inputDelay + i * inputStep;
+    createPromise(i - 1, delays)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
